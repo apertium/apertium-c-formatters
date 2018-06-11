@@ -1,5 +1,5 @@
 /*
- * Copyleft Bernard Chardonneau (2012) for initial version
+ * Copyleft Bernard Chardonneau (2012-+)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -19,8 +19,7 @@
  * Generic reformater for mnemonic interface files and man pages
  * after an Apertium translation.
  *
- * This source file permit to generate both apertium-remnemo and
- * apertium-reman executables.
+ * This source file permit to generate apertium-remnemo executable.
  *
  */
 
