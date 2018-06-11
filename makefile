@@ -18,8 +18,8 @@ desman:	desman.c
 desmnemo: desmnemo.c
 	cc -o desmnemo desmnemo.c
 
-reman:	generic-reformatter.c
-	cc -o reman generic-reformatter.c
+reman:	reman.c
+	cc -o reman reman.c
 
-remnemo: reman
-	cp reman remnemo
+remnemo: remnemo.c
+	cc -o remnemo remnemo.c
