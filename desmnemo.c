@@ -1,5 +1,5 @@
 /*
- * Copyleft Bernard Chardonneau (2012) for initial version
+ * Copyleft Bernard Chardonneau (2012-+)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

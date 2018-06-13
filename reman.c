@@ -19,7 +19,7 @@
  * Generic reformater for mnemonic interface files and man pages
  * after an Apertium translation.
  *
- * This source file permit to generate apertium-reman executable.
+ * This source file allows to generate apertium-reman executable.
  *
  */
 
