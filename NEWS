@@ -1,0 +1,3 @@
+13/06/18 : Now, desmnemo ans resmnemo commands allow correct translations
+(no interaction between two following lines) with mnemonic files in which
+the right part string is not included into " "

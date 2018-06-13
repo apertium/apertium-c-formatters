@@ -21,7 +21,8 @@ The main files of this package are :
 
 desman.c       : source program of the man pages deformatter
 desmnemo.c     : source program of the mnemonic interface file deformatter
-generic-reformatter.c : source program of the common reformatter
+reman.c        : source program of the man pages reformatter
+remnemo.c      : source program of the mnemonic interface file reformatter
 apertium-man   : a shell to make man page translations easier
 apertium-mnemo : a shell to make mnemonic interface file translations easier
 makefile       : makefile to compile and install tools

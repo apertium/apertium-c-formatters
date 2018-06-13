@@ -18,12 +18,19 @@
  *
  * Deformater for mnemonic interface files before Apertium translation.
  *
- * Files to be used are made of lines with the following format :
+ * Files to be used are made of lines with the following formats :
  *
  * Mnemonic             "printf_formated_string"
+ *            or now
+ * Mnemonic             formated_string
  *
  * The mnemonic starts at colomn 1 and only the printf_formated_string
- * must be translated by Apertium.
+ * or the formatted_string must be translated by Apertium.
+ *
+ * Generally, the string on the right is just ordinary text, but %s
+ * %d or a similar indication can be included inside if the value of
+ * a variable must be included in the generated message.
+ *
  * Comments starting by a # at column 1 are also allowed.
  *
  */
@@ -147,7 +154,7 @@ int main (int argc, char **argv)
         // now, the end of the line will be translated
         putchar (']');
 
-        while (lastchar != '"' && lastchar != '\n' && lastchar != EOF)
+        while (lastchar != '\r' && lastchar != '\n' && lastchar != EOF)
         {
             // except for \? sequences
             if (lastchar == '\\')
@@ -195,12 +202,11 @@ int main (int argc, char **argv)
             }
         }
 
-        // to say each printf formatted string must be translated
-        // without taking into account previous printf formatted strings
-        if (lastchar == '"')
-            printf (".[]");
+        // added to say each formatted string must be translated
+        // without taking into account previous formatted strings
+        printf (",[]");
 
-        // end of printf formatted string reached
+        // end of the formatted string reached
         putchar ('[');
 
         while (lastchar != '\n' && lastchar != EOF)

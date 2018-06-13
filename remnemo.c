@@ -74,9 +74,9 @@ int main (int argc, char **argv)
     // while input was not read completly
     while (lastchar != EOF)
     {
-        // if '.' found
-        // skip completly ".[]" strings but output the '.' in the other cases
-        if (lastchar == '.')
+        // if ',' found
+        // skip completly ",[]" strings but output the ',' in the other cases
+        if (lastchar == ',')
         {
             lastchar = getchar ();
 
@@ -85,10 +85,10 @@ int main (int argc, char **argv)
                 lastchar = getchar ();
 
                 if (lastchar != ']')
-                    putchar ('.');
+                    putchar (',');
             }
             else
-                putchar ('.');
+                putchar (',');
         }
         // other characters
         else
